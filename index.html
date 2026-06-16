@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Imagens Stock</title>
+    <style>
+        /* Estilos Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        /* Barra de Pesquisa (Estética) */
+        .search-container {
+            margin: 15px auto;
+            max-width: 500px;
+            display: flex;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+
+        .search-container button {
+            padding: 10px 20px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: #219653;
+        }
+
+        /* Grade de Imagens */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
