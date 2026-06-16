@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco de Imagens Stock</title>
+    <title>Galeria de Fotos Gratuitas</title>
     <style>
-        /* Estilos Gerais */
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            background-color: #f4f7f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
             color: #333;
+            padding: 20px;
         }
 
-        /* Cabeçalho */
         header {
-            background-color: #ffffff;
-            padding: 20px;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
         }
 
         header h1 {
@@ -31,41 +28,93 @@
             margin-bottom: 10px;
         }
 
-        /* Barra de Pesquisa (Estética) */
-        .search-container {
-            margin: 15px auto;
-            max-width: 500px;
-            display: flex;
+        header p {
+            color: #7f8c8d;
         }
 
-        .search-container input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px 0 0 4px;
-            outline: none;
-        }
-
-        .search-container button {
-            padding: 10px 20px;
-            background-color: #27ae60;
-            color: white;
-            border: none;
-            border-radius: 0 4px 4px 0;
-            cursor: pointer;
-        }
-
-        .search-container button:hover {
-            background-color: #219653;
-        }
-
-        /* Grade de Imagens */
-        .gallery-container {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        .grid {
+        /* Grid da Galeria */
+        .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .caption {
+            padding: 15px;
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
+
+        .caption a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .caption a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Minha Galeria Sem Copyright</h1>
+        <p>Imagens bonitas e gratuitas para uso livre.</p>
+    </header>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600" alt="Paisagem de montanha">
+            <div class="caption">Foto por Unsplash</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600" alt="Natureza com neblina">
+            <div class="caption">Foto por Unsplash</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=600" alt="Ponte na floresta">
+            <div class="caption">Foto por Unsplash</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1472214222541-d510753a4707?w=600" alt="Vale verdejante">
+            <div class="caption">Foto por Unsplash</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600" alt="Montanhas verdes">
+            <div class="caption">Foto por Unsplash</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600" alt="Pessoa na natureza">
+            <div class="caption">Foto por Unsplash</div>
+        </div>
+    </div>
+
+</body>
+</html>
